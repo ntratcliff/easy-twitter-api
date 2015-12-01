@@ -24,4 +24,8 @@ $tmhOAuth->request(
     $params
 );
 
+//get response and echo
+$response = $tmhOAuth->response;
+echo $response['response'];
+
 ?>
