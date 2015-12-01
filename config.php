@@ -1,5 +1,7 @@
 <?php
 
+require 'tmhOAuth/tmhOAuth.php';
+
 /* Get your consumer/user key and 
 secret from https://apps.twitter.com
 and replace the values below */
