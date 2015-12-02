@@ -1,7 +1,7 @@
 <?php
 
 require 'tmhOAuth/tmhOAuth.php';
-include 'config.php';
+include 'twitter-api.config';
 
 $tmhOAuth = new tmhOAuth($oAuthKeys);
 
