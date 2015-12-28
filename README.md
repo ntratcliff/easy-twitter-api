@@ -15,16 +15,6 @@ RewriteRule ^proj/twitter-api/1.1/(.*)$ proj/twitter-api/requests.php?request=$1
 RewriteRule ^proj/twitter-api/twitter-api.config$ - [R=404]
 ```
 
-#Experimental easy installer
-
-If you're feeling adventurous, try using the one-file installer on `dev`.
-
-1. Simply put `install.php` in the directory on your webserver you want to use for API access.
-2. Navigate to `install.php` in your browser
-3. Fill in your consumer key, consumer secret, user token, and user secret found on the [Twitter Apps page](https://apps.twitter.com/)
-4. Add the rule output by `install.php` to your `.HTACCESS` file.
-5. Delete `install.php` from your webserver.
-
 #How to use
 All Twitter API 1.1 endpoints accessable through self-authentication are available through the same path from api.twitter.com.
 For example: `api.twitter.com/1.1/statuses/user_timeline.json?screen_name=20c109&count=30` is available at: `mywebsite.com/api-install-dir/1.1/statuses/user_timeline.json?screen_name=20c109&count=30`
